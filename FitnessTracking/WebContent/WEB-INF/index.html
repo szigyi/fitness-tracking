@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fitness Tracking</title>
+	
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/bootstrap/bootstrap.js"></script>
+	<script src="lib/circleProgress/circle-progress.js"></script>
+	<script src="lib/d3/d3.js"></script>
+	<script src="lib/c3/c3.js"></script>
+	
+	<script src="json/trackdata.json"></script>
+	<script type="text/javascript" src="js/StringEnricher.js"></script>
+	<script type="text/javascript" src="js/ReverseArray.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	
+	
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/c3/c3.css">
+	
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1 class="own">Fitness tracking <small>app</small></h1>
+	</div>
+	<h6>Fat burn / full Duration</h6>
+	<div id="circleProgresses"></div>
+	
+	<h6>Calories * Avg BPM * Max BPM * Fat burn / Duration</h6>
+	<div id="totalRatio"></div>
+	
+	<h6>Calories / Duration</h6>
+	<div id="caloriesDuration"></div>
+	<table id="dataTable" class="table table-hover">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Start time</th>
+				<th>Duration</th>
+				<th>Calories</th>
+				<th>Average BPM</th>
+				<th>Max BPM</th>
+				<th>Fat Burn</th>
+				<th>Fitness</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+</body>
+</html>

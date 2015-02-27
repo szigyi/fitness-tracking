@@ -1,0 +1,119 @@
+trackdata = [
+	{
+		"date": "2015-01-23T07:32:00.00+01:00",
+		"duration": "1846",
+		"calories": "321",
+		"averageBPM": "147",
+		"maxBPM": "177",
+		"fatBurnDuration": "365",
+		"fitnessDuration": "1481"
+	},
+	{
+		"date": "2015-01-27T07:39:00.00+01:00",
+		"duration": "1776",
+		"calories": "326",
+		"averageBPM": "153",
+		"maxBPM": "182",
+		"fatBurnDuration": "373",
+		"fitnessDuration": "1387"
+	},
+	{
+		"date": "2015-01-29T07:39:00.00+01:00",
+		"duration": "2283",
+		"calories": "409",
+		"averageBPM": "150",
+		"maxBPM": "182",
+		"fatBurnDuration": "403",
+		"fitnessDuration": "1880"
+	},
+	{
+		"date": "2015-01-30T07:45:00.00+01:00",
+		"duration": "1962",
+		"calories": "369",
+		"averageBPM": "154",
+		"maxBPM": "183",
+		"fatBurnDuration": "357",
+		"fitnessDuration": "1605"
+	},
+	{
+		"date": "2015-02-02T07:29:00.00+01:00",
+		"duration": "2489",
+		"calories": "435",
+		"averageBPM": "148",
+		"maxBPM": "174",
+		"fatBurnDuration": "585",
+		"fitnessDuration": "1904"
+	},
+	{
+		"date": "2015-02-03T07:30:00.00+01:00",
+		"duration": "2355",
+		"calories": "431",
+		"averageBPM": "151",
+		"maxBPM": "182",
+		"fatBurnDuration": "453",
+		"fitnessDuration": "1902"
+	},
+	{
+		"date": "2015-02-05T07:29:00.00+01:00",
+		"duration": "2409",
+		"calories": "419",
+		"averageBPM": "147",
+		"maxBPM": "178",
+		"fatBurnDuration": "473",
+		"fitnessDuration": "1936"
+	},
+	{
+		"date": "2015-02-09T07:30:00.00+01:00",
+		"duration": "2595",
+		"calories": "372",
+		"averageBPM": "132",
+		"maxBPM": "169",
+		"fatBurnDuration": "1677",
+		"fitnessDuration": "918"
+	},
+	{
+		"date": "2015-02-10T07:33:00.00+01:00",
+		"duration": "2302",
+		"calories": "398",
+		"averageBPM": "146",
+		"maxBPM": "184",
+		"fatBurnDuration": "906",
+		"fitnessDuration": "1396"
+	},
+	{
+		"date": "2015-02-12T07:34:00.00+01:00",
+		"duration": "2399",
+		"calories": "423",
+		"averageBPM": "148",
+		"maxBPM": "175",
+		"fatBurnDuration": "867",
+		"fitnessDuration": "1552"
+	},
+	{
+		"date": "2015-02-16T07:30:00.00+01:00",
+		"duration": "2191",
+		"calories": "364",
+		"averageBPM": "143",
+		"maxBPM": "168",
+		"fatBurnDuration": "1047",
+		"fitnessDuration": "1144"
+	},
+	{
+		"date": "2015-02-17T07:26:00.00+01:00",
+		"duration": "2430",
+		"calories": "404",
+		"averageBPM": "143",
+		"maxBPM": "179",
+		"fatBurnDuration": "1114",
+		"fitnessDuration": "1313"
+	},
+	{
+		"date": "2015-02-19T07:26:00.00+01:00",
+		"duration": "1986",
+		"calories": "358",
+		"averageBPM": "150",
+		"maxBPM": "185",
+		"fatBurnDuration": "708",
+		"fitnessDuration": "1276"
+	}
+];

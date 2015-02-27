@@ -1,0 +1,71 @@
+body {
+	background-color: #F9F9F9;
+}
+
+h1.own {
+	background: -webkit-linear-gradient(left top, #3aeabb , #fdd250); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #3aeabb, #fdd250); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #3aeabb, #fdd250); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #3aeabb , #fdd250); /* Standard syntax */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+#circleProgresses > .circle {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+#circleProgresses > .circle > strong {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+// Desktop
+	.page-header {
+		margin: 0px 0 10px;
+	}
+	
+	h1.own {
+		font-size: 72px;
+		font-weight: bold;
+	}
+	
+	#circleProgresses > .circle {
+		margin: 6px 6px 20px;
+		line-height: 1.2;
+	}
+	
+	#circleProgresses > .circle > strong {
+		top: 55px;
+		line-height: 40px;
+		font-size: 30px;
+	}
+
+// Mobile
+@media all and (max-width: 1500px) {
+	.page-header {
+		margin: 0px 0 5px;
+	}
+	
+	h1.own {
+		font-size: 32px;
+		font-weight: bold;
+	}
+	
+	#circleProgresses > .circle {
+		margin: 6px 6px 20px;
+		line-height: 1.2;
+	}
+	
+	#circleProgresses > .circle > strong {
+		top: 55px;
+		line-height: 40px;
+		font-size: 30px;
+	}
+}
