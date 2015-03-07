@@ -1,8 +1,8 @@
 
 var adjustCircleProgress = function (jQueryObj, value) {
-	var size = 150;
+	var size = 145;
 	if (window.innerWidth < 768) {
-		size = 140;
+		size = 170;
 	}
 	
 	jQueryObj.circleProgress({
@@ -31,7 +31,9 @@ var adjustLineChart = function (chartID, columns) {
 $(document).ready(function() {
 	var table = $('#dataTable');
 	var circleProgresses = $('#circleProgresses');
-	var data = trackdata;
+	var selectedCircleProgresses = $('#selectedCircleProgresses');
+	var data = new ParseWorkouts(trackdata);
+	var revData = data.fastReverse();
 	
 	var totalRatioColumn = ['Total Ratio'];
 	var totalRatioColumns = [totalRatioColumn];
@@ -59,7 +61,7 @@ $(document).ready(function() {
 	});
 	
 	// populate circle progress
-	data.forEach(function(workout, index) {
+	revData.forEach(function(workout, index) {
 		var c = document.createElement('div');
 		var circ = $(c).addClass('circle').addClass('circle-' + index);
 		var s = document.createElement('strong');
@@ -70,9 +72,24 @@ $(document).ready(function() {
 		adjustCircleProgress(circ, workout.fatBurnProgress);
 	});
 	
+	var dataMean = Math.floor(data.length / 2);
+	
+	// populate selected circle progress
+	data.forEach(function(workout, index) {
+		if (index === 0 || (index + 1) === data.length || index === dataMean) {
+			var c = document.createElement('div');
+			var circ = $(c).addClass('circle').addClass('circle-' + index);
+			var s = document.createElement('strong');
+			var i = document.createElement('div');
+			circ.append(i);
+			circ.append(s);
+			selectedCircleProgresses.append(circ);
+			adjustCircleProgress(circ, workout.fatBurnProgress);
+		}
+	});
+	
 	// populate table
-	var rev = data.reverse();
-	rev.forEach(function(workout, index) {
+	revData.forEach(function(workout, index) {
 		var row = '<tr><td>' + workout.date.toDateString()
 			+ '</td><td>' + workout.date.toTimeString()
 			+ '</td><td>' + workout.duration.toHHMMSS()
