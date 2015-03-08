@@ -22,6 +22,7 @@ le(768px)
 
 gt(768px)
 
+![Larger than 768px](https://cloud.githubusercontent.com/assets/1894992/6545317/4e83b352-c581-11e4-803c-242bfaf23f87.png)
 
 ###First design:
 ![Header](https://cloud.githubusercontent.com/assets/1894992/6541519/200b3b6c-c4d7-11e4-8824-892d1a3ffa46.png "Header")
