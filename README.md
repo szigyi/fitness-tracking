@@ -2,11 +2,11 @@
 A very pure webapp which visualize the tracked fitness activities.
 The main goal is to develop a one page web app where a user can sign up and save their fitness activities and shows them on this gorgeous web UI.
 
-Demo site: http://fitness.szabolcsszilagyi.hu
+**Demo site: http://fitness.szabolcsszilagyi.hu**
 
-Evulation of site
+##Evulation of site
 
-Little responsive CSS+JS (The devices are an iPhone 5S and a normal desktop)
+###Little responsive CSS+JS (The devices are an iPhone 5S and a normal desktop)
 <= 320px
 ![Smaller or eq than 320px](https://cloud.githubusercontent.com/assets/1894992/6545268/d919b6d6-c57e-11e4-818e-8fb8912b8688.PNG)
 <= 568px
@@ -17,6 +17,6 @@ Little responsive CSS+JS (The devices are an iPhone 5S and a normal desktop)
 >= 768px
 
 
-First design:
+###First design:
 ![Header](https://cloud.githubusercontent.com/assets/1894992/6541519/200b3b6c-c4d7-11e4-8824-892d1a3ffa46.png "Header")
 ![Charts](https://cloud.githubusercontent.com/assets/1894992/6541518/f91146e6-c4d6-11e4-8dd2-8733c419edfb.png "Charts")
