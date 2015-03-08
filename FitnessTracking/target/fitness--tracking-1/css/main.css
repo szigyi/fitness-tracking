@@ -1,0 +1,251 @@
+body {
+	background-color: #F9F9F9;
+}
+
+h1.own {
+	background: -webkit-linear-gradient(left top, #3aeabb , #fdd250); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #3aeabb, #fdd250); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #3aeabb, #fdd250); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #3aeabb , #fdd250); /* Standard syntax */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+.hole {
+	box-shadow: 0px 0px 20px rgb(220, 220, 220) inset;
+}
+
+#circleProgresses {
+	padding: 5px;
+	overflow: scroll;
+}
+
+.circleProgress > div {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.circleProgress > div > div {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+.circleProgress > div > .percentage {
+	line-height: 0px;
+}
+
+.circleProgress > div > .percentage > i {
+	position: absolute;
+}
+
+.circleProgress > div > .date {
+	color: rgb(160, 160, 160);
+}
+
+@media (min-width: 768px) {
+	.page-header {
+		margin: 0px 0 10px;
+	}
+	
+	h1.own {
+		font-size: 72px;
+		font-weight: bold;
+	}
+	
+	#circleProgresses {
+		height: 170px;
+	}
+	
+	.circleProgress > .circle {
+		margin: 6px 3px;
+	}
+	
+	.circleProgress > .bigCircle {
+		margin: 12px 5px;
+	}
+	
+	.circleProgress > .circle > .percentage {
+		top: 72px;
+		font-size: 42px;
+	}
+
+	.circleProgress > .circle > .percentage > i {
+		bottom: -8px;
+		font-size: 16px;
+	}
+
+	.circleProgress > .bigCircle > .percentage {
+		top: 144px;
+		font-size: 102px;
+	}
+
+	.circleProgress > .bigCircle > .percentage > i {
+		bottom: -24px;
+		font-size: 24px;
+	}
+	
+	.circleProgress > .circle > .date {
+		font-size: 10px;
+		bottom: 17px;
+	}
+	
+	.circleProgress > .bigCircle > .date {
+		font-size: 14px;
+		bottom: 27px;
+	}
+}
+
+@media (max-width: 768px) {
+	#circleProgresses {
+		height: 132px;
+	}
+
+	.circleProgress > .circle {
+		margin: 6px -5px;
+	}
+	
+	.circleProgress > .bigCircle {
+		margin: 12px -13px;
+	}
+	
+	.circleProgress > .circle > .percentage {
+		top: 55px;
+		font-size: 34px;
+	}
+
+	.circleProgress > .circle > .percentage > i {
+		bottom: -7px;
+		font-size: 12px;
+	}
+
+	.circleProgress > .bigCircle > .percentage {
+		top: 127px;
+		font-size: 82px;
+	}
+
+	.circleProgress > .bigCircle > .percentage > i {
+		bottom: -20px;
+		font-size: 20px;
+	}
+	
+	.circleProgress > .circle > .date {
+		font-size: 9px;
+		bottom: 17px;
+	}
+	
+	.circleProgress > .bigCircle > .date {
+		font-size: 14px;
+		bottom: 27px;
+	}
+}
+
+@media (max-width: 568px) {
+	.page-header {
+		margin: 0px 0 5px;
+	}
+	
+	h1.own, .h1, h1 {
+		font-size: 42px;
+		font-weight: bold;
+	}
+	
+	#circleProgresses {
+		height: 108px;
+	}
+	
+	.circleProgress > .circle {
+		margin: 6px -4px;
+	}
+	
+	.circleProgress > .bigCircle {
+		margin: 12px -7px;
+	}
+	
+	.circleProgress > .circle > .percentage {
+		top: 38px;
+		font-size: 24px;
+	}
+
+	.circleProgress > .circle > .percentage > i {
+		bottom: -5px;
+		font-size: 8px;
+	}
+
+	.circleProgress > .bigCircle > .percentage {
+		top: 90px;
+		font-size: 64px;
+	}
+
+	.circleProgress > .bigCircle > .percentage > i {
+		bottom: -14px;
+		font-size: 16px;
+	}
+	
+	.circleProgress > .circle > .date {
+		font-size: 8px;
+		bottom: -10px;
+	}
+	
+	.circleProgress > .bigCircle > .date {
+		font-size: 10px;
+		bottom: 22px;
+	}
+}
+
+@media (max-width: 320px) {
+	.page-header {
+		margin: 0px 0 5px;
+	}
+	
+	h1.own, .h1, h1 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	
+	#circleProgresses {
+		height: 85px;
+	}
+	
+	.circleProgress > .circle {
+		margin: 6px -4px;
+	}
+	
+	.circleProgress > .bigCircle {
+		margin: 12px -7px;
+	}
+	
+	.circleProgress > .circle > .percentage {
+		top: 32px;
+		font-size: 18px;
+	}
+
+	.circleProgress > .circle > .percentage > i {
+		bottom: -3px;
+		font-size: 7px;
+	}
+
+	.circleProgress > .bigCircle > .percentage {
+		top: 56px;
+		font-size: 36px;
+	}
+
+	.circleProgress > .bigCircle > .percentage > i {
+		bottom: -8px;
+		font-size: 10px;
+	}
+	
+	.circleProgress > .circle > .date {
+		display: none;
+		font-size: 8px;
+		bottom: -10px;
+	}
+	
+	.circleProgress > .bigCircle > .date {
+		font-size: 10px;
+		bottom: -10px;
+	}
+}
