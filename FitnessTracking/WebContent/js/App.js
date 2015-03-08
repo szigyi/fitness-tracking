@@ -1,21 +1,29 @@
 
-var adjustCircleProgress = function (jQueryObj, value) {
-	var size = 145;
-	if (window.innerWidth < 768) {
-		size = 170;
+var adjustCircleProgress = function (jQueryObj, value, isBig) {
+	var size = isBig ? 300 : 145;
+	var thickness = isBig ? 60 : 30;
+	if (window.innerWidth <= 320) {
+		size = isBig ? 110 : 63;
+		thickness = isBig ? 25 : 15;
+	} else if (window.innerWidth <= 568) {
+		size = isBig ? 190 : 80;
+		thickness = isBig ? 40 : 20;
+	} else if (window.innerWidth <= 768) {
+		size = isBig ? 265 : 110;
+		thickness = isBig ? 55 : 25;
 	}
 	
 	jQueryObj.circleProgress({
 	    value: value,
 	    size: size,
 	    lineCap: 'round',
-	    thickness: 30,
+	    thickness: thickness,
 	    animation: {
             duration: 3500,
             easing: 'circleProgressEasing'
         }
 	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(parseInt(value * 100 * progress) + '<i>%</i>');
+		$(this).find('.percentage').html(parseInt(value * 100 * progress) + '<i>%</i>');
 	});
 };
 
@@ -62,14 +70,14 @@ $(document).ready(function() {
 	
 	// populate circle progress
 	revData.forEach(function(workout, index) {
-		var c = document.createElement('div');
-		var circ = $(c).addClass('circle').addClass('circle-' + index);
-		var s = document.createElement('strong');
-		var i = document.createElement('div');
+		var circ = $('<div>').addClass('circle').addClass('circle-' + index);
+		var s = $('<div>').addClass('percentage');
+		var i = $('<div>').addClass('date');
+		i.html(workout.date.toDateString());
 		circ.append(i);
 		circ.append(s);
 		circleProgresses.append(circ);
-		adjustCircleProgress(circ, workout.fatBurnProgress);
+		adjustCircleProgress(circ, workout.fatBurnProgress, false);
 	});
 	
 	var dataMean = Math.floor(data.length / 2);
@@ -77,14 +85,14 @@ $(document).ready(function() {
 	// populate selected circle progress
 	data.forEach(function(workout, index) {
 		if (index === 0 || (index + 1) === data.length || index === dataMean) {
-			var c = document.createElement('div');
-			var circ = $(c).addClass('circle').addClass('circle-' + index);
-			var s = document.createElement('strong');
-			var i = document.createElement('div');
+			var circ = $('<div>').addClass('bigCircle').addClass('circle-' + index);
+			var s = $('<div>').addClass('percentage');
+			var i = $('<div>').addClass('date');
+			i.html(workout.date.toDateString());
 			circ.append(i);
 			circ.append(s);
 			selectedCircleProgresses.append(circ);
-			adjustCircleProgress(circ, workout.fatBurnProgress);
+			adjustCircleProgress(circ, workout.fatBurnProgress, true);
 		}
 	});
 	
