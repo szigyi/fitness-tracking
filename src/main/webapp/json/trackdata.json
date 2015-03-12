@@ -115,5 +115,14 @@ trackdata = [
 		"maxBPM": "185",
 		"fatBurnDuration": "708",
 		"fitnessDuration": "1276"
+	},
+	{
+		"date": "2015-03-10T07:34:00.00+01:00",
+		"duration": "1875",
+		"calories": "397",
+		"averageBPM": "166",
+		"maxBPM": "188",
+		"fatBurnDuration": "142",
+		"fitnessDuration": "1734"
 	}
 ];
