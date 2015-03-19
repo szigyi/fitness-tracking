@@ -31,8 +31,19 @@ var adjustLineChart = function (chartID, columns) {
 	var chart = c3.generate({
 	    bindto: '#' + chartID,
 	    data: {
-	      columns: columns
-	    }
+	      columns: columns,
+	      axes: {
+	    	  Calories: 'y2' // ADD
+	        },
+	        types: {
+	        	Calories: 'bar' // ADD
+	          }
+	    },
+	    axis: {
+	        y2: {
+	          show: true // ADD
+	        }
+	      }
 	});
 };
 
@@ -45,8 +56,10 @@ $(document).ready(function() {
 	
 	var totalRatioColumn = ['Total Ratio'];
 	var totalRatioColumns = [totalRatioColumn];
-	var calorieDuration = ['Calories / Duration'];
+	var calorieDuration = 'Calories / Duration';
 	var calorieDurations = [calorieDuration];
+	var caloriesTitle = 'Calories';
+	var calories = [caloriesTitle];
 	
 	data.forEach(function(workout) {
 		var date = new Date(workout.date);
@@ -65,7 +78,10 @@ $(document).ready(function() {
 		totalRatioColumn.push(totalRatio);
 		
 		var calorDur = workout.calories / workout.duration;
-		calorieDuration.push(calorDur.toPrecision(2));
+		//workout.caloriesProgress = calorDur;
+		calorieDurations.push(calorDur.toPrecision(2));
+		
+		calories.push(workout.calories);
 	});
 	
 	// populate circle progress
@@ -111,5 +127,5 @@ $(document).ready(function() {
 	});
 	
 	adjustLineChart('totalRatio', totalRatioColumns);
-	adjustLineChart('caloriesDuration', calorieDurations);
+	adjustLineChart('caloriesDuration', [calories, calorieDurations]);
 });
