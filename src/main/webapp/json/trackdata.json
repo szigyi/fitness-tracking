@@ -124,5 +124,50 @@ trackdata = [
 		"maxBPM": "188",
 		"fatBurnDuration": "142",
 		"fitnessDuration": "1734"
+	},
+	{
+		"date": "2015-03-16T07:31:00.00+01:00",
+		"duration": "1905",
+		"calories": "319",
+		"averageBPM": "144",
+		"maxBPM": "169",
+		"fatBurnDuration": "887",
+		"fitnessDuration": "1007"
+	},
+	{
+		"date": "2015-03-17T07:36:00.00+01:00",
+		"duration": "1133",
+		"calories": "162",
+		"averageBPM": "131",
+		"maxBPM": "156",
+		"fatBurnDuration": "934",
+		"fitnessDuration": "199"
+	},
+	{
+		"date": "2015-03-23T07:34:00.00+01:00",
+		"duration": "1404",
+		"calories": "258",
+		"averageBPM": "153",
+		"maxBPM": "176",
+		"fatBurnDuration": "243",
+		"fitnessDuration": "1153"
+	},
+	{
+		"date": "2015-03-24T07:27:00.00+01:00",
+		"duration": "1522",
+		"calories": "299",
+		"averageBPM": "158",
+		"maxBPM": "177",
+		"fatBurnDuration": "173",
+		"fitnessDuration": "1349"
+	},
+	{
+		"date": "2015-03-26T07:24:00.00+01:00",
+		"duration": "1668",
+		"calories": "308",
+		"averageBPM": "153",
+		"maxBPM": "177",
+		"fatBurnDuration": "407",
+		"fitnessDuration": "1261"
 	}
 ];
