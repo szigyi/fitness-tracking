@@ -129,6 +129,7 @@
 						<debuglevel></debuglevel>
 						<debug>true</debug>
 						<verbose>true</verbose>
+						<compilerVersion>1.7</compilerVersion>
 					</configuration>
 				</plugin>
 				<plugin>
