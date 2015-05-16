@@ -8,5 +8,5 @@
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
    
-
+    <import resource="dao.xml" />
 </beans>
